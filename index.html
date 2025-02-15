@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 32);
+        color: white;
+        font-family: "poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(17, 17, 65);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(177, 177, 232);
+        font-size: 1.02rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 120px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .rightSection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .purple {
+        color: rgb(154, 76, 226);
+      }
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(154, 76, 226);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.8rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background: white;
+        margin: 0 150px;
+      }
+      .image-top {
+        width: 40px;
+        position: relative;
+        top: -43px;
+        left: -13px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 61px;
+        width: 131px;
+      }
+      .vertical-Description {
+        position: relative;
+        top: 63px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Amit's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftSection">
+          Hi My name is <span class="purple">Amit</span>
+          <div>And i am a passionate</div>
+          <span id="element"></span>
+        </div>
+
+        <div class="rightSection">
+          <img src="./developer.png" alt="portfolio_img" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">What i have learn so far</span>
+        <h1>past Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="./developer_smmall.png"
+              alt="developer"
+            />
+            <div class="vertical-title">College Student BCA(2018-21)</div>
+            <div class="vertical-Description">
+              During my BCA i have not gain that much knowledge about coding
+              because after six month of joining college lock-down was happened
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              style="background-color: transparent; mix-blend-mode: multiply"
+              src="./youtube logo.png"
+              alt="developer"
+            />
+            <div class="vertical-title">Youtuber</div>
+            <div class="vertical-Description">
+              so at the time of lock-down youtube was something where i see
+              potential to grow my carrier but i choose moto-vlogging at the
+              time of covid
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="./developer_smmall.png"
+              alt="developer"
+            />
+            <div class="vertical-title">College Student MCA(2022-24)</div>
+            <div class="vertical-Description">
+              After all that i switched my carrier and start to do those which i
+              can do permanent in my life so i choose to grow my carrier in
+              coding field
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="./developer_smmall.png"
+              alt="developer"
+            />
+            <div class="vertical-title">Junior Developer</div>
+            <div class="vertical-Description">
+              i gained about frontend development and i always try to do
+              something new so i also start learning about data Analysis and
+              this was all i have done in my past and now i am ready to begin
+              with an opportunity to start my carrier
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--  after adding animation script use to load animation-->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Wev Developer", "Data Analysis", "Part-time Youtuber"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
